@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <img src="/logo.png" alt="The logo" class="logo"/>
+      <img src="https://cdn.tourismeestrie.ca/logo/logo-square.png"
+           alt="The logo"
+           class="logo"/>
       <div class="countdown-container">
         <div class="countdown-wrapper">
           <Countdown date="2020-01-01 00:00:00"></Countdown>
