@@ -46,9 +46,12 @@
     },
     methods: {
       submitEmail: function() {
-        axios.post(`/api/mailing-list`, {
-          email: this.email,
-        });
+        if (this.email && this.email.length > 1) {
+          axios.post(`/api/mailing-list`, {
+            email: this.email,
+          });
+          this.email = '';
+        }
       },
     },
   }
