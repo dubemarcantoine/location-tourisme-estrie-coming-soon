@@ -1,34 +1,34 @@
 <template>
-  <client-only>
-    <div class="container">
-      <div>
-        <img src="https://cdn.tourismeestrie.ca/logo/logo-square.png"
-             alt="The logo"
-             class="logo"/>
+  <div class="container">
+    <div>
+      <img src="https://cdn.tourismeestrie.ca/logo/logo-square.png"
+           alt="The logo"
+           class="logo"/>
+      <client-only>
         <div class="countdown-container">
           <div class="countdown-wrapper">
             <Countdown date="2020-01-01T00:00:00"></Countdown>
           </div>
         </div>
-        <h1 class="title">{{ $t('title') }}</h1>
-        <h2 class="subtitle">{{ $t('subTitle') }}</h2>
-        <div class="links">
-          <p>{{ $t('mailingListJoin') }}</p>
-          <br>
-          <input :placeholder="$t('email')"
-                 type="text"
-                 v-model="email"/>
-          <a
-            href="#"
-            class="button--brown"
-            @click="submitEmail()"
-          >
-            {{ $t('submit') }}
-          </a>
-        </div>
+      </client-only>
+      <h1 class="title">{{ $t('title') }}</h1>
+      <h2 class="subtitle">{{ $t('subTitle') }}</h2>
+      <div class="links">
+        <p>{{ $t('mailingListJoin') }}</p>
+        <br>
+        <input :placeholder="$t('email')"
+               type="text"
+               v-model="email"/>
+        <a
+          href="#"
+          class="button--brown"
+          @click="submitEmail()"
+        >
+          {{ $t('submit') }}
+        </a>
       </div>
     </div>
-  </client-only>
+  </div>
 </template>
 
 <script>
