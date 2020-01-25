@@ -7,7 +7,7 @@
       <client-only>
         <div class="countdown-container">
           <div class="countdown-wrapper">
-            <Countdown date="2020-01-12T00:00:00"></Countdown>
+            <Countdown date="2020-01-31T23:59:59"></Countdown>
           </div>
         </div>
       </client-only>
